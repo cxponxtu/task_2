@@ -4,7 +4,7 @@
 sudo apt install apache2 php php-mysql
 
 # Copying files
-sudo cp /apache/gemini.club.conf /apache/db.gemini.club.conf /etc/apache2/sites-available
+sudo cp apache/gemini.club.conf apache/db.gemini.club.conf /etc/apache2/sites-available
 
 # Enabling modules for proxy
 sudo a2enmod proxy proxy_http 
