@@ -1,0 +1,58 @@
+name: gemini
+
+services:
+  gemini:
+    container_name: gemini
+
+    ### Use this for pre-built image 
+    image: revanth7733/gemini
+
+    ### Use this to build image 
+    build: ./docker_build 
+
+    hostname: gemini
+    ports:
+      - 127.0.0.1:7777:80
+    environment:
+      - TZ=Asia/Kolkata
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+
+      ## Set password as same which you entered during setup
+      - MYSQL_PASSWORD=core
+
+      ## Credentials for PHPMyAdmin service @ db.gemini.club
+      - PHPMYADMIN_USER=qq
+      - PHPMYADMIN_PASSWORD=12
+
+      ## Password for core @ user.gemini.club
+      - WEBSITE_PASSWORD=core
+
+    depends_on:
+      - mysql
+    volumes:
+      - core_home:/home/core
+
+  mysql:
+    container_name: mysql
+    image: mysql
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - TZ=Asia/Kolkata
+
+      ## Set password as same which you entered during setup
+      - MYSQL_PASSWORD=core
+    
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin
+    ports:
+      - 127.0.0.1:7778:80
+    environment:
+      - TZ=Asia/Kolkata
+      - PMA_HOST=mysql
+
+volumes:
+  db:
+  core_home:

@@ -1,0 +1,1 @@
+This is backup folder where cron takes perodic backup of database from mysql container 

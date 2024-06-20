@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 20px;
+    margin-top: 80px;
+    line-height: 1.3;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#left {
+    font-size: 20px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+
+.header_button {
+    background-color: #007bff; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header_button:hover {
+    background-color: #1b3bf5;
+}
+
+#username {
+    margin-right: 15px;
+}
+
+.back {
+    padding: 10px 20px;
+    /* border: none; */
+    border-radius: 7px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.back:hover{
+    background-color: #1b3bf5;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#mentor_dom {
+    border: none;
+
+}
+#detail {
+    border: none;
+}
+
+.domain {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.table_button {
+    border-radius: 7px;
+    background-color: #daecff;
+    color: #000000;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+
+.table_button:hover { 
+    background-color: #5ae6ff;
+}
+
+tr:hover {
+    background-color: #e6f9ff;
+}
