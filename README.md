@@ -19,7 +19,7 @@ bash setup.sh
 - Whole server setup is dockerised and image is available @ [DockerHub](https://hub.docker.com/r/revanth7733/gemini)
 - Server image `gemnini` requires `mysql` and `phpmyadmin` docker images. All required images will be pulled automatically. 
 - Before starting the containers, set the environment variables in `compose.yaml`
-- If you want to build the image from base linux image, comment `image : gemini` line in `compose.yaml` . This will build image while running `docker compose` .  `Dockerfile` and other required files for building image are available in `docker_build` directory
+- If you want to build the image from base linux image, comment `image : gemini` line in `compose.yaml` . This will build image while running `docker compose` .  `Dockerfile` and other files required for building image are available in `docker_build` directory
 - To start the server, use the following command.
 ```sh
 docker compose up -d
@@ -50,5 +50,5 @@ docker exec -it gemini sudo -u [username] bash
 ## Other details
 - For websites, `/etc/hosts` is modified accordingly for local DNS.
 - For SQL Queries, `mysql-connector-python` module is used. Instead of installing module by `pip`, it is extracted from `.tar.xz` file because installing `pip` increases image size by `350MB`
-- User Details website is made using `PHP` 
+- User Details website is made with `PHP` 
 
