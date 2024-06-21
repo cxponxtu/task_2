@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Apache and PHP installation
-sudo apt install apache2 php php-mysql
+# Apache installation
+sudo apt install apache2
 
 # Copying files
 sudo cp apache/gemini.club.conf apache/db.gemini.club.conf /etc/apache2/sites-available
