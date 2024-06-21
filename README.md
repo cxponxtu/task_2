@@ -1,7 +1,7 @@
 # Task 2 : Gemini Club Inductions Server
 
 ## Setup
-To setup apache, php ( for website ) and cronjob ( for db backup )
+To setup apache and cronjob ( for db backup )
 ```sh
 bash setup.sh
 ```
