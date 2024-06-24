@@ -42,7 +42,7 @@ services:
       - TZ=Asia/Kolkata
 
       ## Set password as same which you entered during setup
-      - MYSQL_ROOT_PASSWORD=core
+      - MYSQL_PASSWORD=core
     
   phpmyadmin:
     container_name: phpmyadmin
