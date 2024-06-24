@@ -28,7 +28,7 @@ docker compose up -d
 
 
 ## Usage
-- Default password of `core` is `core`
+- Default root password of `core` is `core`
 - To run the alaises, first start the interactive terminal for user by the following command and then run the aliases.
 ```sh
 docker exec -it gemini sudo -u [username] bash
