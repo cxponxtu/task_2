@@ -24,7 +24,7 @@ sudo systemctl enable apache2
 
 # Adding cronjob for db_backup
 read -p "Enter root password for mysql : " MYSQL_ROOT_PASSWORD 
-echo "docker exec mysql bash -c \"mysqldump -p$MYSQL_ROOT_PASSWORD gemini 2>/dev/null\" | cat > `pwd`/backup\`/date +'%d-%m-%y_%H_%M_%S'\`.sql" > backup/backup.sh
+echo "docker exec mysql bash -c \"mysqldump -p$MYSQL_ROOT_PASSWORD gemini 2>/dev/null\" | cat > `pwd`/backup/\`date +'%d-%m-%y_%H_%M_%S'\`.sql" > backup/backup.sh
 new_cron="3 5-8,15 1 1-7 1 `pwd`/backup/backup.sh"
 cat <(crontab -l 2>/dev/null) <(echo $new_cron) | crontab -
 chmod +x backup/backup.sh
