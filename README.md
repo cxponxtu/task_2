@@ -1,7 +1,7 @@
 # Task 2 : Gemini Club Inductions Server
 
 ## Setup
-To setup apache, php ( for website ) and cronjob ( for db backup )
+To setup apache and cronjob ( for db backup )
 ```sh
 bash setup.sh
 ```
@@ -51,5 +51,5 @@ docker exec -it gemini sudo -u [username] bash
 ## Other details
 - For websites, `/etc/hosts` is modified accordingly for local DNS.
 - For SQL Queries, `mysql-connector-python` module is used. Instead of installing module by `pip`, it is extracted from `.tar.xz` file because installing `pip` increases image size by `350MB`
-- User Details website is made using `PHP` 
+- User Details website is made with `PHP` 
 
