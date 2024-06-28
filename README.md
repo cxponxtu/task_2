@@ -10,7 +10,7 @@ bash setup.sh
 ## Environment variables
 |Variable|Use|
 | ------ | ------ |
-| `MYSQL_PASSWORD` | Root password for `mysql` service ( Set the same as before ) |
+| `MYSQL_PASSWORD` ,`MYSQL_ROOT_PASSWORD`  | Root password for `mysql` service ( Set the same as before ) |
 | `PHPMYADMIN_USER` ,`PHPMYADMIN_PASSWORD` | Credentials for read-only account at `PHPMyAdmin` service |
 | `WEBSITE_PASSWORD` | Password for `core` to see user details at `user.gemini.club` |
 >__Note__ : Do not change other variables.
